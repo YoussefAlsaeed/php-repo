@@ -12,7 +12,7 @@ echo "<select>";
 
 foreach($arr as $day)
 {
-    echo "<option>" . $day . "</option>";
+    echo "<option value ={$day}> $day </option>";
 }
 
 echo "</select>";
@@ -22,7 +22,7 @@ echo "<select>";
 
 for($i = 1950 ; $i <= 2050 ; $i++)
 {
-    echo "<option>" . $i . "</option>";
+    echo "<option value ={$i} >  $i  </option>";
 }
 
 echo "</select>";
