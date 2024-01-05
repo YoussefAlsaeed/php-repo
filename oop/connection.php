@@ -11,8 +11,7 @@ class connection
 
     function connect()
     {
-        $this->connect = mysqli_connect($this->host,$this->user,$this->pass) or die(mysqli_errno($this->connect));
-        mysqli_select_db($this->connect,$this->db);
+        $this->connect = mysqli_connect($this->host,$this->user,$this->pass,$this->db) or die(mysqli_errno($this->connect));
     }
 
     function disconnect()

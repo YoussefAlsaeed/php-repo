@@ -10,11 +10,8 @@
         </li>
 
     <br>
-
         <li>
-
             <label> Age : </label>
-
             <?php
             echo "<select name=age >";
 
@@ -24,7 +21,6 @@
             echo "</select>";
             ?>
         </li>
-
     <br>
         <li>
             <label> Gender : </label>
@@ -87,10 +83,5 @@ if(isset($_POST["btn"]))
 
 
 }
-
-
-
-
-
 
 ?>

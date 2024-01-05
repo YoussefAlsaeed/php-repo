@@ -1,11 +1,13 @@
 <?php
 
 
-$conn = mysqli_connect("localhost","root","");   //Connect to database -- > arg (hostname  ,  username  , password) 
+//$conn = mysqli_connect("localhost","root","");   //Connect to database -- > arg (hostname  ,  username  , password) 
+//mysqli_select_db( $conn ,"airlinedb"); // select db (connection string , db name)
 
-//$conn = mysqli_connect("localhost","root","","airlinedb");   // it can aslo take db name as fourth argument
 
-mysqli_select_db( $conn ,"airlinedb"); // select db (connection string , db name)
+
+$conn = mysqli_connect("localhost","root","","airlinedb");   // it can aslo take db name as fourth argument
+
 
 $query = mysqli_query($conn,"Select * from user"); // perform query
 $row = mysqli_fetch_array($query); // returns associative array --- ONE ROW ONLY
