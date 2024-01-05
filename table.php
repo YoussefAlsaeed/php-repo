@@ -6,9 +6,9 @@ echo "<table border = 2px style='height: 50% width: 50%; margin: auto;'>";
 
 // EACH CELL IN EACH ROW INCREASES BY ROW NUMBER
 
-for ($i = 1; $i <= 50; $i++) {
+for ($i = 1; $i <= 5; $i++) {
     echo "<tr>";
-    for ($j = 1; $j <= 50; $j++) {
+    for ($j = 1; $j <= 10; $j++) {
         $cnt = $i * $j;
         echo "<td> $cnt </td>";
     }
