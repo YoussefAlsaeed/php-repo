@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script>
+
+        function validate() {
+            if (document.getElementById("username").value != "" && document.getElementById("pass").value != ""
+                && document.getElementById("pass").value != "select" | "update" | "delete" | "update")
+                alert("success")
+
+            else
+                alert("fail")
+
+        }
+
+    </script>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .loginform {
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divRem {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .loginbtn {
+        width: 100px;
+    }
+
+    .inputdata {
+        background: white url(user.png) left no-repeat;
+        background-size: 20px;
+        padding-left: 30px;
+    }
+
+    .social {
+        width: 100%;
+    }
+
+    .twitter {
+        background: white url(user.png) left no-repeat;
+        background-size: 20px;
+        padding-left: 30px;
+    }
+
+    .fb {
+        background: white url(user.png) left no-repeat;
+        background-size: 20px;
+        padding-left: 30px;
+    }
+
+    .go {
+        background: white url(user.png) left no-repeat;
+        background-size: 20px;
+        padding-left: 30px;
+    }
+</style>
+
+<body>
+    <div class="loginform">
+        <h1> Login </h1>
+        <form class="box">
+            <input type="text" name="username" id="username" placeholder="User name" class="inputdata">
+            <br>
+            <input type="password" name="pass" id="pass" placeholder="password" class="inputdata">
+            <br>
+            <div class="divRem">
+                <input type="checkbox" name="check" value="remember">Remember Me
+                <a href="#">Forgot Password?</a>
+            </div>
+            <br><br>
+            <center>
+                <input type="submit" class="loginbtn" name="loginbtn" onclick="validate()" value="Log in"
+                    style="background-color: red;">
+            </center>
+            <br><br>
+            <center>
+                <h3>Login</h3>
+                <h5>With your social media account</h5>
+            </center>
+
+            <div class="social">
+                <center>
+                    <button class="twitter">Twitter</button>
+                    <button class="fb">Facebook</button>
+                    <button class="go">Google+</button>
+                </center>
+
+            </div>
+
+            <hr style="border: 2px solid;  width: 100%;">
+
+            <center>
+                <h5>Don't have an account? Register Now!</h5>
+
+                <input type="submit" class="loginbtn" name="loginbtn" value="Register"
+                    style="background-color: rgb(255, 255, 255);">
+            </center>
+
+        </form>
+    </div>
+</body>
+
+
+
+</html>
